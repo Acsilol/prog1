@@ -1,5 +1,5 @@
 /*
-    g++ drill.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o drill `fltk-config --ldflags --use-images`
+    g++ ch13.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp -o ch13 `fltk-config --ldflags --use-images`
 */
 #include "Simple_window.h"
 #include "Graph.h"
@@ -33,7 +33,7 @@ int main()
     	for(int j = 0 ; j<8; j++){
     		vr.push_back(new Rectangle(Point(i*100,j*100),100,100));
     		if (i == j){
-  			vr[vr.size()-1].set_fill_color(Color::blue);
+  			vr[vr.size()-1].set_fill_color(Color::red);
     		}
     		win.attach(vr[vr.size()-1]);
     	}
